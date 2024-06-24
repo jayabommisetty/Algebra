@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Spaces-Create Meeting</title>
+        <title>MeetSpot: Schedule meeting</title>
         <meta charset="utf-8">
         <meta name="author" content="K.Sasikalyan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,21 @@
         <script src="https://meet.jit.si/external_api.js"></script>
     </head>
     <body class="meet-head">
-        <h1>Create New Space</h1>
+        <!--<h1>Welcome to Spaces!</h1>
         <button id="start" type="start">Create Meeting</button>
         <br>
+        <button id="start" type="button" onclick="window.location.href='index.html'">Home</button>-->
+        <h1>Welcome to MeetSpot</h1>
+        <p>Our Community introducing the MeetSpot. MeetSpot is a community-driven platform that allows people to easily organize meetings and share information globally. It aims to improve international relations, quality of life, and combat societal issues. MeetSpot is the fastest way to schedule meetings and events, offering professional scheduling meetings openly. MeetingSpot is opensource, secure, and offers privacy and security through jitsi APIs.
+        </p>
+        <button id="start" type="start">Start Meeting</button>
+        <br>
         <button id="start" type="button" onclick="window.location.href='index.html'">Home</button>
+
         <div id="jitsi-container"></div>
+        <div id="dev">
+            <p>Developed by <a href="#">@Sasikalyan.K</a></p>
+        </div>
         <script>
             var button = document.querySelector('#start');
             var container = document.querySelector('#jitsi-container');
@@ -35,12 +45,12 @@
                 var options = {
                     "roomName": randomString,
                     "parentNode": container,
-                    "width": 1200,
-                    "height": 900,
+                    "width": 800,
+                    "height": 500,
                 };
                 api = new JitsiMeetExternalAPI(domain, options);
              });
         </script>
-        <p class="copy-right">© Copyright 2022 Algebra <a href="https://github.com/KanakamSasikalyan/Algebra">Sasikalyan</a></p>
+        
     </body>
 </html>
